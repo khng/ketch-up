@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingViewController" customModule="ketch_up" customModuleProvider="target">
             <connections>
+                <outlet property="landingStartButton" destination="Px8-hz-paC" id="BQ1-q4-KMo"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Gvp-So-fov"/>
             </connections>
         </placeholder>
@@ -18,7 +19,18 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Px8-hz-paC">
+                    <rect key="frame" x="164" y="328.5" width="46" height="30"/>
+                    <accessibility key="accessibilityConfiguration" label="LandingStartButton"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Px8-hz-paC" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="3pc-Ei-CVc"/>
+                <constraint firstItem="Px8-hz-paC" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="bPr-d3-PN8"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
     </objects>
