@@ -36,6 +36,8 @@
 		AEFE62271F81E71E0062CA35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA11D201F81AF74000B99A6 /* GoogleService-Info.plist */; };
 		AEFE62281F81E7200062CA35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA11D201F81AF74000B99A6 /* GoogleService-Info.plist */; };
 		AEFE62291F81E7210062CA35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA11D201F81AF74000B99A6 /* GoogleService-Info.plist */; };
+		AEFE622C1F8329FD0062CA35 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE622B1F8329FD0062CA35 /* UserManager.swift */; };
+		AEFE622E1F833AA10062CA35 /* PersistentStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE622D1F833AA10062CA35 /* PersistentStoreManager.swift */; };
 		B9B828C3C6B4E39B9967E382 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = CA6B56485C18091557E17949 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DBD28CCC1B1B021C2E1C8555 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F45757B0C88681360E20 /* EarlGrey.swift */; };
 		EE5AF006E5FBEF9EEBF37F71 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6B56485C18091557E17949 /* EarlGrey.framework */; };
@@ -113,6 +115,8 @@
 		AEFE62211F81E3EE0062CA35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AEFE62231F81E4170062CA35 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AEFE62251F81E4600062CA35 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		AEFE622B1F8329FD0062CA35 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		AEFE622D1F833AA10062CA35 /* PersistentStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStoreManager.swift; sourceTree = "<group>"; };
 		CA6B56485C18091557E17949 /* EarlGrey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EarlGrey.framework; path = Carthage/Build/iOS/EarlGrey.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -186,6 +190,7 @@
 		AE465CE51F7C9A7100B19579 /* ketch-up */ = {
 			isa = PBXGroup;
 			children = (
+				AEFE622A1F8329C20062CA35 /* Network */,
 				AE465CE61F7C9A7100B19579 /* AppDelegate.swift */,
 				AE465D0C1F7C9E7A00B19579 /* LandingViewController.swift */,
 				AEF4A7DF1F7CA4C600747C15 /* LandingViewController.xib */,
@@ -194,6 +199,7 @@
 				AEA11D1C1F819BD7000B99A6 /* Localizable.strings */,
 				AE465CF21F7C9A7200B19579 /* Info.plist */,
 				AEA11D201F81AF74000B99A6 /* GoogleService-Info.plist */,
+				AEFE622D1F833AA10062CA35 /* PersistentStoreManager.swift */,
 			);
 			path = "ketch-up";
 			sourceTree = "<group>";
@@ -261,6 +267,14 @@
 				AE7DDEE11F81DE5400E95BA8 /* GTMSessionFetcher.framework */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		AEFE622A1F8329C20062CA35 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AEFE622B1F8329FD0062CA35 /* UserManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +453,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE465D0E1F7C9E7A00B19579 /* LandingViewController.swift in Sources */,
+				AEFE622C1F8329FD0062CA35 /* UserManager.swift in Sources */,
+				AEFE622E1F833AA10062CA35 /* PersistentStoreManager.swift in Sources */,
 				AE465CE71F7C9A7200B19579 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
