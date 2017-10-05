@@ -1,8 +1,6 @@
 import UIKit
-import FirebaseDatabase
 
 class LandingViewController: UIViewController {
-
     @IBOutlet weak var landingStartButton: UIButton!
     
     var userManager: UserManagerProtocol!
@@ -15,12 +13,6 @@ class LandingViewController: UIViewController {
         super.viewDidLoad()
 
         landingStartButton.setTitle(NSLocalizedString("landing_start_button", comment: "Start button title on landing page"), for: .normal)
-        
-        var ref: DatabaseReference!
-        
-        ref = Database.database().reference()
-        ref.child("users").setValue(["username": "username"])
-        
     }
 
     override func didReceiveMemoryWarning() {

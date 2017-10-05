@@ -16,6 +16,7 @@
 		AE465D111F7C9EA700B19579 /* LandingViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE465D101F7C9EA700B19579 /* LandingViewControllerSpec.swift */; };
 		AE97871D1F868E0A00FC859D /* PersistentStoreManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97871C1F868E0A00FC859D /* PersistentStoreManagerSpec.swift */; };
 		AE97871F1F868F3A00FC859D /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE97871E1F868F3A00FC859D /* UserDefaultsProtocol.swift */; };
+		AE9787211F86C06600FC859D /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9787201F86C06600FC859D /* ViewControllerFactory.swift */; };
 		AEA11D1A1F8193FF000B99A6 /* LandingViewControllerUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA11D191F8193FF000B99A6 /* LandingViewControllerUISpec.swift */; };
 		AEA11D1E1F819BD7000B99A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEA11D1C1F819BD7000B99A6 /* Localizable.strings */; };
 		AEF4A7E01F7CA4C600747C15 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEF4A7DF1F7CA4C600747C15 /* LandingViewController.xib */; };
@@ -107,6 +108,7 @@
 		AE7DDEED1F81DEBA00E95BA8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		AE97871C1F868E0A00FC859D /* PersistentStoreManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStoreManagerSpec.swift; sourceTree = "<group>"; };
 		AE97871E1F868F3A00FC859D /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
+		AE9787201F86C06600FC859D /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		AEA11D0F1F8192B3000B99A6 /* ketch-up-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ketch-up-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA11D131F8192B3000B99A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEA11D191F8193FF000B99A6 /* LandingViewControllerUISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewControllerUISpec.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				AE465CE61F7C9A7100B19579 /* AppDelegate.swift */,
 				AE465D0C1F7C9E7A00B19579 /* LandingViewController.swift */,
 				AE97871E1F868F3A00FC859D /* UserDefaultsProtocol.swift */,
+				AE9787201F86C06600FC859D /* ViewControllerFactory.swift */,
 				AEF4A7DF1F7CA4C600747C15 /* LandingViewController.xib */,
 				AE465CED1F7C9A7200B19579 /* Assets.xcassets */,
 				AE465CEF1F7C9A7200B19579 /* LaunchScreen.storyboard */,
@@ -473,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEFE62331F85D8290062CA35 /* NetworkService.swift in Sources */,
+				AE9787211F86C06600FC859D /* ViewControllerFactory.swift in Sources */,
 				AE465D0E1F7C9E7A00B19579 /* LandingViewController.swift in Sources */,
 				AEFE622C1F8329FD0062CA35 /* UserManager.swift in Sources */,
 				AEFE622E1F833AA10062CA35 /* PersistentStoreManager.swift in Sources */,

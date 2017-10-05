@@ -8,7 +8,7 @@ protocol PersistentStoreManagerProtocol {
     func currentUser() -> User
 }
 
-class PersistentStoreManager {
+class PersistentStoreManager: PersistentStoreManagerProtocol {
     var userDefaults: UserDefaultsProtocol
     
     init(userDefaults: UserDefaultsProtocol) {
