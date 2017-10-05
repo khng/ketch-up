@@ -2,6 +2,12 @@ import UIKit
 
 typealias User = String?
 
+protocol PersistentStoreManagerProtocol {
+    func storeCurrent(user: User)
+    
+    func currentUser() -> User
+}
+
 class PersistentStoreManager {
     
     func storeCurrent(user: User) {
