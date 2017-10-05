@@ -9,7 +9,8 @@ class NetworkService: NetworkServiceProtocol {
     var ref: DatabaseReference = Database.database().reference()
     
     func generateUserID() -> User {
-        let autoID = ref.child("user").childByAutoId()
-        return autoID.key
+        let autoID = ref.child("users").childByAutoId().key
+        ref.child("users/\(autoID)").setValue("")
+        return autoID
     }
 }
