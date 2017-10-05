@@ -9,13 +9,17 @@ protocol PersistentStoreManagerProtocol {
 }
 
 class PersistentStoreManager {
+    var userDefaults: UserDefaultsProtocol
+    
+    init(userDefaults: UserDefaultsProtocol) {
+        self.userDefaults = userDefaults
+    }
     
     func storeCurrent(user: User) {
-        UserDefaults.standard.set(user, forKey: "user")
+        userDefaults.set(user, forKey: "user")
     }
     
     func currentUser() -> User {
-        return UserDefaults.standard.value(forKey: "user") as! User
+        return userDefaults.string(forKey: "user")
     }
-    
 }

@@ -12,5 +12,4 @@ class NetworkService: NetworkServiceProtocol {
         let autoID = ref.child("user").childByAutoId()
         return autoID.key
     }
-    
 }
