@@ -4,13 +4,24 @@ class QuestionGraph {
     let nodes: [Node]
     let edges: [Edge]
 
+    lazy var edgeMap: [Node:[Node]] = {
+        var dict: [Node:[Node]] = [:]
+        edges.forEach { edge in
+            if dict[edge.fromNode] == nil {
+                dict[edge.fromNode] = [edge.toNode]
+            } else {
+                dict[edge.fromNode]!.append(edge.toNode)
+            }
+        }
+        return dict
+    }()
+    
     init(nodes: [Node], edges: [Edge]) {
         self.nodes = nodes
         self.edges = edges
     }
     
     func findListOfNextPossibleQuestions(with rootNodes: [Node]) -> [Node] {
-        
         let queue: Queue<Node> = Queue(queue: rootNodes)
         var unansweredNodes: Set<Node> = []
         var listOfToNodesFromUnansweredNodes: Set<Node> = []
@@ -21,19 +32,17 @@ class QuestionGraph {
             if !node.answered {
                 unansweredNodes.insert(node)
             } else {
-                edges.forEach { edge in
-                    if edge.fromNode == node {
-                        queue.enqueue(value: edge.toNode)
+                if let nodes = edgeMap[node] {
+                    nodes.forEach { toNode in
+                        queue.enqueue(value: toNode)
                     }
                 }
             }
         }
         
         unansweredNodes.forEach { node in
-            edges.forEach { edge in
-                if edge.fromNode == node {
-                    listOfToNodesFromUnansweredNodes.insert(edge.toNode)
-                }
+            if let nodes = edgeMap[node] {
+                listOfToNodesFromUnansweredNodes.formUnion(nodes)
             }
         }
         
