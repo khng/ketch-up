@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE0982101F9D9144005AC732 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09820F1F9D9144005AC732 /* Queue.swift */; };
+		AE0982121FA18510005AC732 /* QueueSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0982111FA18510005AC732 /* QueueSpec.swift */; };
 		AE11F1D71F7F3D8F0059394C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE11F1D51F7F3D8E0059394C /* Quick.framework */; };
 		AE11F1D81F7F3D8F0059394C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE11F1D61F7F3D8F0059394C /* Nimble.framework */; };
 		AE465CE71F7C9A7200B19579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE465CE61F7C9A7100B19579 /* AppDelegate.swift */; };
@@ -85,6 +86,7 @@
 /* Begin PBXFileReference section */
 		4974F45757B0C88681360E20 /* EarlGrey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		AE09820F1F9D9144005AC732 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		AE0982111FA18510005AC732 /* QueueSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueSpec.swift; sourceTree = "<group>"; };
 		AE11F1D51F7F3D8E0059394C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		AE11F1D61F7F3D8F0059394C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AE465CE31F7C9A7100B19579 /* ketch-up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ketch-up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +241,7 @@
 				AEFE622F1F8486870062CA35 /* UserManagerSpec.swift */,
 				AE97871C1F868E0A00FC859D /* PersistentStoreManagerSpec.swift */,
 				AEFE62371F88804F0062CA35 /* QuestionGraphSpec.swift */,
+				AE0982111FA18510005AC732 /* QueueSpec.swift */,
 				AE465CFD1F7C9A7200B19579 /* Info.plist */,
 			);
 			path = "ketch-up-tests";
@@ -517,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE465D111F7C9EA700B19579 /* LandingViewControllerSpec.swift in Sources */,
+				AE0982121FA18510005AC732 /* QueueSpec.swift in Sources */,
 				AE97871D1F868E0A00FC859D /* PersistentStoreManagerSpec.swift in Sources */,
 				AEFE62301F8486870062CA35 /* UserManagerSpec.swift in Sources */,
 				AEFE62381F88804F0062CA35 /* QuestionGraphSpec.swift in Sources */,

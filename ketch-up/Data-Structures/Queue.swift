@@ -16,7 +16,9 @@ class Queue<T: Equatable> {
     // allows ppl who use the func to just not use the return value
     @discardableResult func dequeue() -> T? {
         let firstValue = self.queue.first
-        self.queue.remove(at: 0)
+        if count() > 0 {
+            self.queue.remove(at: 0)
+        }
         return firstValue
     }
     
