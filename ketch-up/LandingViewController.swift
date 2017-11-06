@@ -11,7 +11,6 @@ class LandingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         landingStartButton.setTitle(NSLocalizedString("landing_start_button", comment: "Start button title on landing page"), for: .normal)
     }
 
@@ -24,5 +23,6 @@ class LandingViewController: UIViewController {
         if !userManager.userAlreadyCreated() {
             userManager.createUser()
         }
+        self.present(QuestionViewController(), animated: true, completion: nil)
     }
 }

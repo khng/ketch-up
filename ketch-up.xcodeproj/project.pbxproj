@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		AE0982101F9D9144005AC732 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09820F1F9D9144005AC732 /* Queue.swift */; };
 		AE0982121FA18510005AC732 /* QueueSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0982111FA18510005AC732 /* QueueSpec.swift */; };
+		AE0982141FA2D9D5005AC732 /* QuestionViewControllerUISpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0982131FA2D9D5005AC732 /* QuestionViewControllerUISpec.swift */; };
+		AE0982171FA2E190005AC732 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0982151FA2E190005AC732 /* QuestionViewController.swift */; };
+		AE0982181FA2E190005AC732 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0982161FA2E190005AC732 /* QuestionViewController.xib */; };
 		AE11F1D71F7F3D8F0059394C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE11F1D51F7F3D8E0059394C /* Quick.framework */; };
 		AE11F1D81F7F3D8F0059394C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE11F1D61F7F3D8F0059394C /* Nimble.framework */; };
+		AE152AC81FAD5397008757F9 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE152AC71FAD5397008757F9 /* QuestionManager.swift */; };
 		AE465CE71F7C9A7200B19579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE465CE61F7C9A7100B19579 /* AppDelegate.swift */; };
 		AE465CEE1F7C9A7200B19579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE465CED1F7C9A7200B19579 /* Assets.xcassets */; };
 		AE465CF11F7C9A7200B19579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE465CEF1F7C9A7200B19579 /* LaunchScreen.storyboard */; };
@@ -87,8 +91,12 @@
 		4974F45757B0C88681360E20 /* EarlGrey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		AE09820F1F9D9144005AC732 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		AE0982111FA18510005AC732 /* QueueSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueSpec.swift; sourceTree = "<group>"; };
+		AE0982131FA2D9D5005AC732 /* QuestionViewControllerUISpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerUISpec.swift; sourceTree = "<group>"; };
+		AE0982151FA2E190005AC732 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		AE0982161FA2E190005AC732 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		AE11F1D51F7F3D8E0059394C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		AE11F1D61F7F3D8F0059394C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		AE152AC71FAD5397008757F9 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		AE465CE31F7C9A7100B19579 /* ketch-up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ketch-up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE465CE61F7C9A7100B19579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE465CED1F7C9A7200B19579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -222,9 +230,11 @@
 				AEFE622A1F8329C20062CA35 /* Network */,
 				AE465CE61F7C9A7100B19579 /* AppDelegate.swift */,
 				AE465D0C1F7C9E7A00B19579 /* LandingViewController.swift */,
+				AE0982151FA2E190005AC732 /* QuestionViewController.swift */,
 				AE97871E1F868F3A00FC859D /* UserDefaultsProtocol.swift */,
 				AE9787201F86C06600FC859D /* ViewControllerFactory.swift */,
 				AEF4A7DF1F7CA4C600747C15 /* LandingViewController.xib */,
+				AE0982161FA2E190005AC732 /* QuestionViewController.xib */,
 				AE465CED1F7C9A7200B19579 /* Assets.xcassets */,
 				AE465CEF1F7C9A7200B19579 /* LaunchScreen.storyboard */,
 				AEA11D1C1F819BD7000B99A6 /* Localizable.strings */,
@@ -269,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				AEA11D191F8193FF000B99A6 /* LandingViewControllerUISpec.swift */,
+				AE0982131FA2D9D5005AC732 /* QuestionViewControllerUISpec.swift */,
 				AEA11D131F8192B3000B99A6 /* Info.plist */,
 				4974F45757B0C88681360E20 /* EarlGrey.swift */,
 			);
@@ -316,6 +327,7 @@
 			children = (
 				AEFE622B1F8329FD0062CA35 /* UserManager.swift */,
 				AEFE622D1F833AA10062CA35 /* PersistentStoreManager.swift */,
+				AE152AC71FAD5397008757F9 /* QuestionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -440,6 +452,7 @@
 			files = (
 				AEA11D1E1F819BD7000B99A6 /* Localizable.strings in Resources */,
 				AEF4A7E01F7CA4C600747C15 /* LandingViewController.xib in Resources */,
+				AE0982181FA2E190005AC732 /* QuestionViewController.xib in Resources */,
 				AEFE62271F81E71E0062CA35 /* GoogleService-Info.plist in Resources */,
 				AE465CF11F7C9A7200B19579 /* LaunchScreen.storyboard in Resources */,
 				AE465CEE1F7C9A7200B19579 /* Assets.xcassets in Resources */,
@@ -509,8 +522,10 @@
 				AE465D0E1F7C9E7A00B19579 /* LandingViewController.swift in Sources */,
 				AEFE622C1F8329FD0062CA35 /* UserManager.swift in Sources */,
 				AEFE622E1F833AA10062CA35 /* PersistentStoreManager.swift in Sources */,
+				AE0982171FA2E190005AC732 /* QuestionViewController.swift in Sources */,
 				AE97871F1F868F3A00FC859D /* UserDefaultsProtocol.swift in Sources */,
 				AE0982101F9D9144005AC732 /* Queue.swift in Sources */,
+				AE152AC81FAD5397008757F9 /* QuestionManager.swift in Sources */,
 				AE465CE71F7C9A7200B19579 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD28CCC1B1B021C2E1C8555 /* EarlGrey.swift in Sources */,
+				AE0982141FA2D9D5005AC732 /* QuestionViewControllerUISpec.swift in Sources */,
 				AEA11D1A1F8193FF000B99A6 /* LandingViewControllerUISpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
